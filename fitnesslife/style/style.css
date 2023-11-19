@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'PF DinDisplay Pro';
+    src: url('../fonts/PFDinDisplayPro-Thin.eot');
+    src: local('PFDinDisplayPro-Thin'), url('../fonts/PFDinDisplayPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PFDinDisplayPro-Thin.woff') format('woff'),
+        url('../fonts/PFDinDisplayPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'adineue PRO Cyr Light Web';
+    src: url('../fonts/adineuePROCyr-LightWeb.eot');
+    src: url('../fonts/adineuePROCyr-LightWeb.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/adineuePROCyr-LightWeb.woff') format('woff'),
+        url('../fonts/adineuePROCyr-LightWeb.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'adineue PRO Cyr Bold Web';
+    src: url('../fonts/adineuePROCyr-BoldWeb.eot');
+    src: url('../fonts/adineuePROCyr-BoldWeb.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/adineuePROCyr-BoldWeb.woff') format('woff'),
+        url('../fonts/adineuePROCyr-BoldWeb.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    background-color: rgb(20, 31, 31);
+}
+.nav_logo {
+    width: 100px;
+    height: 50px;
+    background-image: url(../img/logo.png);
+    background-size: 83px;
+    background-repeat: no-repeat;
+}
+
+.nav_info {
+    display: flex;
+    /* align-items: center; */
+    list-style-type: none;
+}
+
+.nav_info > a > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'PF DinDisplay Pro';
+    color: white;
+}
+
+.nav_info > a > div {
+    width: 100px;
+    height: 50px;
+    border-bottom: 1px solid rgb(20, 31, 31);
+}
+
+.nav_info > a > div:hover {
+    background-color: rgb(32, 56, 56);
+    border-bottom: 1px solid rgb(185, 24, 24);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main_wrapper {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+
+    align-items: center;
+}
+
+.main_img {
+    background-repeat: no-repeat;
+    background-size: 500px;
+    width: 500px;
+    height: 500px;
+    background-image: url(../img/figures.png);
+}
+
+.main_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    font-family: 'adineue PRO Cyr Bold Web';
+    height: 510px;
+}
+
+.main_text::before {
+    content: '';
+    width: 8px;
+    height: 170px;
+    background-color: black;
+    position: absolute;
+    left: -38px;
+}
+
+.main_text_area {
+    position: relative;
+}
+
+.about_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid black;
+    background-color: #d9d9d9;
+    height: 378px;
+}
+
+.about_img {
+    background-repeat: no-repeat;
+    background-size: 500px;
+    width: 500px;
+    height: 320px;
+    background-image: url('../img/club_picture.jpg');
+}
+
+.about_text {
+    width: 500px;
+
+    font-family: 'PF DinDisplay Pro';
+}
